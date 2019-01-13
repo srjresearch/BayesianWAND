@@ -4,7 +4,7 @@ This repository contains the code and data associated with the paper entitled "R
 
 ## Code
 
-The Code directory contains C code that can be used to generate posterior realisations via MCMC. Instructions on how to compile and execute the code are also provided.
+The code directory contains C code that can be used to generate posterior realisations via MCMC. Instructions on how to compile and execute the code are also provided.
 
 ## Data
 
