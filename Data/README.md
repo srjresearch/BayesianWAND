@@ -8,20 +8,27 @@ In order for the MCMC code to perform correctly the data must be set up in the c
 
 ### Different ranking types
 
-Care must be taken when handling different ranking types. First we recall the notation used within the paper and then provde an example of each ranking type and how they should be formatted in the data file.
-
-K<sub>i</sub> is the number of entities considered by ranker i
-n<sub>i</sub> is the number of positions (ranks) reported by ranker i
-
-Now suppose we have K = 6 entities, labelled (1,2,3,4,5,6), 
-
+Care must be taken when handling different ranking types. First recall that K<sub>i</sub> denotes the number of entities considered by ranker i and n<sub>i</sub> is the number of positions (ranks) reported by ranker i. Suppose we have K = 6 entities, labelled (1,2,3,4,5,6), then an example of the 4 different ranking types is as follows. 
 
 #### Complete ranking
 
-For a complete ranking we have n<sub>i</sub>=K<sub>i</sub>= K 
+A complete ranking occurs when a ranker considers and ranks all possible entities and so here n<sub>i</sub> = K<sub>i</sub> = K. An entry of
 
 1 2 3 4 5 6
+
+within row i of the data file would specify that ranker i preferred entity 1 over entity 2, and entity 2 over entity 3 and so on.
+
+#### Partial ranking
+
+Partial rankings occur when a ranker considers a subset of all the entities and reports back a position for each of those considered, and so n<sub>i</sub> = K<sub>i</sub> &lt K in this scenario.
+
+If ranker i only considered entities (1,2,3) then  n<sub>i</sub> = K<sub>i</sub> = 3 and an entry of
+
 1 2 3 0 0 0
+
+within row i of the data file would specify that ranker i preferred entity 1 over entity 2, and entity 2 over entity 3. The remining entities (4,5,6) were not considered and so do not feature and zeros are used to fill the n<sub>i</sub> - K remaining positions.
+
+
 3 4 5 6 1 2
 4 5 6 1 3 0
 
