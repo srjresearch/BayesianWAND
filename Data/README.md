@@ -39,7 +39,7 @@ should be entered within row i of the data file. The first 4 (M) positions are u
 
 #### Top-M partial ranking
 
-A top--M partial ranking is one obtained when a ranker only considers K<sub>i</sub> &lt; K entities and reports which of these entities they judge to be in positions 1 to M &lt; K<sub>i</sub>.
+A top-M partial ranking is one obtained when a ranker only considers K<sub>i</sub> &lt; K entities and reports which of these entities they judge to be in positions 1 to M &lt; K<sub>i</sub>.
 
 For example, if ranker i only considers the K<sub>i</sub> = 5 entities (1,3,4,5,6) and reports the top-3 ranking (4,5,6) then
 
