@@ -20,7 +20,7 @@ within row i of the data file would specify that ranker i preferred entity 1 ove
 
 #### Partial ranking
 
-Partial rankings occur when a ranker considers a subset of all the entities and reports back a position for each of those considered, and so n<sub>i</sub> = K<sub>i</sub> &lt K in this scenario.
+Partial rankings occur when a ranker considers a subset of all the entities and reports back a position for each of those considered, and so n<sub>i</sub> = K<sub>i</sub> &lt; K in this scenario.
 
 If ranker i only considered entities (1,2,3) then  n<sub>i</sub> = K<sub>i</sub> = 3 and an entry of
 
