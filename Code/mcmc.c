@@ -12,7 +12,7 @@
 #include <unistd.h>
 
 
-////////////////////////// MCMC scheme for posterior sampling using the Bayesian WAND model \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////// MCMC scheme for posterior sampling using the Bayesian WAND model \\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
 
 
 ///////////// Global variables /////////////
