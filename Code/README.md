@@ -2,11 +2,13 @@
 
 This directory contains the MCMC code (mcmc.c) that can be used to perform analyses using the Bayesian WAND model described in the paper. The code is currently configured to analyse the NBA data and can be compiled within a terminal environment using the command
 
-gcc mcmc.c -lgsl -lgslcblas -lm -O3 -o mcmc_exe
+`gcc mcmc.c -lgsl -lgslcblas -lm -O3 -o mcmc_exe`
 
 and executed using the command
 
-./mcmc_exe
+`./mcmc_exe`
+
+**WARNING:** Executing the code above will create the directory /outputs in the current working directory if it does not already exist. Alternatively if the directory exists then any previous output files will be overwritten.
 
 ## Configuration
 
